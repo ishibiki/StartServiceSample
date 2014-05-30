@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
+
+<TextView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/cook_name"/>
+
+<EditText
+    android:id="@+id/edit1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+</EditText>
+
+<LinearLayout
+   	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ 	android:text="save"
+ 	android:onClick="doSave"></Button>
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ 	android:text="find"
+ 	android:onClick="doFind"></Button>
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+ 	android:text="delete"
+ 	android:onClick="doDel"></Button>
+</LinearLayout>
 
 <TextView
 	android:layout_width="wrap_content"
@@ -15,7 +54,7 @@
 	android:orientation="horizontal">
 
 <EditText
-	android:id="@+id/et_time"
+	android:id="@+id/edit2"
 	android:layout_width="50dp"
 	android:layout_height="wrap_content"
 	android:gravity="right"

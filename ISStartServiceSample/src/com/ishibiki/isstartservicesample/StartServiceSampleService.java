@@ -71,6 +71,9 @@ public class StartServiceSampleService extends Service {
         Toast.makeText(this,
                "サービスを終了します。",
                Toast.LENGTH_SHORT).show();
+        // ここに音を入れる！！
+
+
 
          // タイマー設定解除
          timer.cancel();
